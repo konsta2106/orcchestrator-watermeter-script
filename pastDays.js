@@ -4,7 +4,7 @@ import axios from 'axios';
 let startDate = "2023-01-01"
 let endDate = "2023-01-30"
 
-// Timet between requests
+// Sleep timer configs
 const enableSleep = true
 const sleepMs = 65000
 
@@ -33,7 +33,7 @@ let request = (date) => {
     })
 }
 
-// Sleep timer
+// Sleep timer function
 const sleepTimer = (timeMs) => {
     return new Promise((resolve, reject) => {
         console.log('Sleep timer activated')
